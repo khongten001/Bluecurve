@@ -1175,7 +1175,7 @@ menubar > *:selected:focus {
 
 /* Set menu item padding */
 item, popover modelbutton {
-	padding: 3px 5px 3px 6px;
+	padding: 3px 5px 3px 0px;
 	border: 1px solid transparent;
 }
 
@@ -1203,11 +1203,21 @@ popover modelbutton > box {
 
 /* Set margin of menu item labels */
 popover modelbutton > label {
-	margin: 0px 25px 0 0;
+	margin: 0 25px 0 6px;
+}
+
+/* Set margin of menu item images */
+popover modelbutton > image {
+	margin: 0 0 0 -16px;
+}
+
+/* offset contents of menu items */
+popover modelbutton > *:first-child {
+	margin: 0 0 0 -3px;
 }
 
 popover modelbutton > label:dir(rtl) {
-	margin: 0px 0 0 25px;
+	margin: 0 0 0 25px;
 }
 
 /* Set menu item label colors */
